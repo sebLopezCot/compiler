@@ -8,4 +8,7 @@ This is a compiler project.
 2. Run `make` to compile the code.
 3. Run `./compiler` to run the program.
 
+### Tests
+
+1. Run `make test` to run tests.
 
