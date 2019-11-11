@@ -1,5 +1,6 @@
 build
 test_results.txt
+compiler
 
 .vscode/*
 !.vscode/settings.json
