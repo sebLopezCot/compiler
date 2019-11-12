@@ -5,20 +5,29 @@
 - `stmt -> expr`
 
 ### Basic Program Data Types
-- `digits -> digits digit`
-- `digits -> digit`
+- `digits -> digit digits`
 - `digit -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9`
-
-### Expressions
-- `expr -> expr + term`
-- `expr -> expr - term`
-- `expr -> term`
-
-### Terms
-- `term -> term * factor`
-- `term -> term / factor`
-- `term -> factor`
+- `digits -> NULL_TERMINAL`
 
 ### Factors
 - `factor -> digits`
+
+### Expressions
+- `expr -> term expr_prime`
+- `expr_prime -> add_op expr_prime`
+- `expr_prime -> sub_op expr_prime`
+- `expr_prime -> NULL_TERMINAL`
+
+### Operations
+- `add_op -> +`
+- `sub_op -> -`
+- `mult_op -> *`
+- `div_op -> /`
+
+### Terms
+- `term -> factor term_prime`
+- `term_prime -> mult_op factor term_prime`
+- `term_prime -> div_op factor term_prime`
+- `term_prime -> NULL_TERMINAL`
+
 

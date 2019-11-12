@@ -9,6 +9,7 @@ INCLUDE  := -Iinclude/
 SRC      :=                         \
    $(wildcard src/frontend/*.cpp)   \
    $(wildcard src/common/token/*.cpp)   \
+   $(wildcard src/common/production/*.cpp)   \
    $(wildcard src/backend/*.cpp)    \
    $(wildcard src/*.cpp)            \
 
